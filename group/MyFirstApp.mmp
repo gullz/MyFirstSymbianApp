@@ -1,0 +1,30 @@
+/*
+============================================================================
+ Name		: MyFirstApp.mmp
+ Author	  : Bhathiya
+ Copyright   : Test Application 0.1b - Symbian application to display text messages in console
+Copyright (C) 2015  Bhathiya Bandara
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+ Description : This is the project specification file for MyFirstApp.
+============================================================================
+*/
+
+TARGET		  MyFirstApp.exe
+TARGETTYPE	  exe
+UID			 0 0xE92C2F7C
+
+USERINCLUDE	 ..\inc
+SYSTEMINCLUDE   \epoc32\include
+
+SOURCEPATH	  ..\src
+SOURCE		  MyFirstApp.cpp
+
+LIBRARY		 euser.lib
+
+#ifdef ENABLE_ABIV2_MODE
+  DEBUGGABLE_UDEBONLY
+#endif
